@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
+gem 'bson_ext', '1.5.2'
 gem 'mongo_mapper', '~> 0.11.0'
+gem 'devise', '~> 2.0.3'
+gem 'mm-devise', '>= 1.2'
 
 gem 'json'
 gem 'jquery-rails'
