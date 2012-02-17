@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Blogtastic</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-
-</body>
+  <head>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    
+    <title>Blogtastic</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Blogtastic</h1>
+      
+      <ol class="navigation">
+        <!-- todo - make dynamic? -->
+        <li><%= link_to "Home", "/" %></li>
+        <li><%= link_to "About", "#" %></li>
+      </ol>
+      
+      <div id="main-content-wrapper">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
 </html>
