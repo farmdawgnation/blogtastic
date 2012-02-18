@@ -1,4 +1,12 @@
 Blogtastic::Application.routes.draw do
+  get "pages/view"
+
+  get "blogs/index"
+
+  get "blogs/view"
+
+  get "blogs/comment"
+
   devise_for :users
 
   get "home/index"
