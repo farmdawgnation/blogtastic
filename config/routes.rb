@@ -1,4 +1,38 @@
 Blogtastic::Application.routes.draw do
+  get "comments/index"
+
+  get "comments/new"
+
+  get "comments/create"
+
+  get "comments/edit"
+
+  get "comments/save"
+
+  get "comments/delete"
+
+  get "pages/index"
+
+  get "pages/new"
+
+  get "pages/create"
+
+  get "pages/edit"
+
+  get "pages/save"
+
+  get "pages/delete"
+
+  get "blogs/new"
+
+  get "blogs/create"
+
+  get "blogs/edit"
+
+  get "blogs/save"
+
+  get "blogs/delete"
+
   get "pages/view"
 
   get "blogs/index"
