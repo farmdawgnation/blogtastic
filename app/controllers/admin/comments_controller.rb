@@ -1,5 +1,8 @@
-class Admin::CommentsController < ApplicationController
+class Admin::CommentsController < AdminApplicationController
   def index
+  end
+  
+  def show
   end
 
   def new
@@ -11,9 +14,9 @@ class Admin::CommentsController < ApplicationController
   def edit
   end
 
-  def save
+  def update
   end
 
-  def delete
+  def destroy
   end
 end
