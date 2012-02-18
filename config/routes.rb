@@ -1,4 +1,6 @@
 Blogtastic::Application.routes.draw do
+  get "dashboard/index"
+
   get "comments/index"
 
   get "comments/new"
