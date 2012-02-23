@@ -6,14 +6,7 @@ class Page
   key :author, String, :required => true
   key :status, String, :required => true
   key :publish_at, Time, :required => true
-  many :page_versions
-  timestamps!
-  userstamps!
-end
-
-class PageVersion
-  include MongoMapper::EmbeddedDocument
-  
   key :body, String, :required => true
   timestamps!
+  userstamps!
 end
