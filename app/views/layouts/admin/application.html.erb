@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    
+    <title>Blogtastic</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Blogtastic</h1>
+      
+      <ol class="navigation">
+        <li><%= link_to "Home", admin_dashboard_path %></li>
+        <li><%= link_to "Blogs", admin_blogs_path %></li>
+        <li><%= link_to "Comments", admin_comments_path %></li>
+        <li><%= link_to "Pages", admin_pages_path %></li>
+      </ol>
+      
+      <div id="main-content-wrapper">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
