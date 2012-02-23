@@ -22,6 +22,7 @@ Blogtastic::Application.routes.draw do
   # yourself. :P
   ###
   namespace :admin do
+    get "dashboard" => "dashboard#index"
     resources :blogs
     resources :pages
     resources :comments
