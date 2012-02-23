@@ -1,2 +1,20 @@
-<h1>Admin::Pages#new</h1>
-<p>Find me in app/views/admin/pages/new.html.erb</p>
+<div class="backend-edit-form">
+  <section class="left">
+    <%= form_for [:admin, @page] do |f| %>
+      <p>Title: <%= f.text_field :title %></p>
+      <p>Slug: <%= f.text_field :slug %></p>
+      <p>Author: <%= f.text_field :author %></p>
+      <p>Status: <%= f.text_field :status %></p>
+      <p>Publish At: <%= f.text_field :publish_at %></p>
+      <p>Content: <%= f.text_area :body %></p>
+      <%= f.submit %>
+    <% end %>
+  </section>
+  
+  <section class="right">
+    <p>
+      From this screen you can insert content for your page.
+      Please remember that Blogtastic only accepts Markdown.
+    </p>
+  </section>
+</div>
